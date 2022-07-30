@@ -32,7 +32,7 @@
 
     $(AREA_SELETOR).html(decodeURI(data2[1]));
 
-    if (decodeURI(data3[1]) === 'he') {
+/*   if (decodeURI(data3[1]) === 'he') {
         $(ID_SELETOR).html('哈人');
     }if (decodeURI(data3[1]) === '晶哥') {
         $(ID_SELETOR).html(decodeURI(data3[1]) + '摇了我吧');
@@ -42,6 +42,24 @@
         $(ID_SELETOR).html('通过!通过!通过!这' + decodeURI(data3[1]) + '!');
     }else {
         $(ID_SELETOR).html(decodeURI(data3[1]) + '滚');
+    }
+*/
+    switch (decodeURI(data3[1])) {
+        case 'he':
+            $(ID_SELETOR).html('哈人');
+            break;
+        case 'glasses' :
+            $(ID_SELETOR).html('我告诉你我是身经百战了');
+            break;
+        case '晶哥' :
+            $(ID_SELETOR).html(decodeURI(data3[1]) + '摇了我吧');
+            break;
+        case '也要鼓掌' :
+            $(ID_SELETOR).html('通过!通过!通过!这' + decodeURI(data3[1]) + '!');
+            break;
+        default:
+            $(ID_SELETOR).html(decodeURI(data3[1]) + '滚');
+            break;
     }
 
     console.log(data1[2]);
