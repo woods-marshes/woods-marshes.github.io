@@ -10,11 +10,48 @@
     <meta name="keywords" content="woods-marshes,blog">
     <meta name="author" content="woods-marshes">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/jquery-ui.css" type="text/css">
+    <!--
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" type="text/css">
+    -->
     <link rel="stylesheet"  type="text/css" href="stylesheets/normalize.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <title>woods-marshes</title>
 </head>
 <body class="woods-marshes">
+    <div id="dialog-form" data-woods-marshes="dialog-form" title="填写行程信息">
+        <p class="validateTips">不会收集您的任何信息</p>
+        <form data-woods-marshes="form">
+            <fieldset>
+                <div class="from-group">
+                    <label for="phonecode">手机号码</label>
+                    <input type="text" name="phonecode" id="phonecode" autofocus required pattern="[0-9]+" class="text ui-widget-content ui-corner-all">
+                </div>
+                <div class="from-group">
+                    <label for="area">七日内到过的中高风险地区</label>
+                    <input type="text" name="area" id="area" value="" placeholder="例如：神奈川县" required pattern="[^0-9]" class="text ui-widget-content ui-corner-all">
+                </div>
+                <div class="from-group">
+                    <label for="identity">身份</label>
+                    <select name="id" id="identity" class="text ui-widget-content ui-corner-all">
+                        <option value="岁静">~</option> 
+                        <option value="太监">太监</option> 
+                        <option value="集美">集美</option>
+                        <option value="A畜">A畜</option>
+                        <option value="V畜">V畜</option>
+                        <option value="抗带">抗带</option>
+                        <option value="兔友">兔友</option>
+                        <option value="神友">神友</option>
+                        <option value="左棍">←</option>
+                        <option value="晶哥">晶哥</option>
+                        <option value="glasses">蛤</option>
+                        <option value="也要鼓掌">维尼</option>
+                        <option value="he">&nbsp;&nbsp;&nbsp;他&nbsp; </option>
+                    </select>                    
+                </div>
+            </fieldset>
+        </form>
+    </div>
     <header class="woods-header">
             <h1 class="title-text">woods-marshes</h1>
     </header>
@@ -54,8 +91,8 @@
             <div class="ads-list">
                 <il class="list">
                     <li class="list-li">
-                        <a href="#">
-                            <span class="li-title">1. 我</span>
+                        <a href="#" data-woods-marshes="opener">
+                            <span class="li-title">1. 神奈川通讯行程卡</span>
                         </a>
                     </li>
                     <li class="list-li">
@@ -65,7 +102,7 @@
                     </li>
                     <li class="list-li">
                         <a href="#">
-                            <span class="li-title">3. ~</span>
+                            <span class="li-title">3. 听歌</span>
                         </a>
                     </li>
                 </il>
@@ -78,7 +115,7 @@
                 <span>
                     <em>联系我:</em>
                 </span>
-                <a href="">
+                <a href="https://space.bilibili.com/1773785556">
                     <!--
                         <span>
                             bilibili&nbsp;|&nbsp;
@@ -86,7 +123,7 @@
                 -->    
                     <img src="https://img.shields.io/badge/bilibili-TouLe--Channel-brightgreen?labelColor=FF6699&color=FFFFFF" alt="bilibilli">&nbsp;&nbsp;
                 </a>
-                <a href="">
+                <a href="https://github.com/woods-marshes/woods-marshes.github.io">
                     <!--
                         <span>
                             Github&nbsp;|&nbsp;
@@ -94,7 +131,7 @@
                     -->
                     <img src="https://img.shields.io/badge/Github-woods--marshes-brightgreen?labelColor=000000&color=FFFFFF" alt="Github">&nbsp;&nbsp;
                 </a>
-                <a href="">
+                <a href="#">
                     <!--
                         <span>
                             Douban
@@ -109,6 +146,8 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="scripts/dialog.js"></script>
     <script src="scripts/time.js"></script>
     <script src="scripts/main.js"></script>
 </body>
