@@ -88,7 +88,7 @@ span {
 .card-title {
     position: absolute;
     top: 10px;
-    left: 115px;
+    left: 110px;
 }
 
 .card-title-1 {
@@ -168,7 +168,7 @@ span {
     margin: 0;
     padding: 0;
     vertical-align: baseline;
-    font-size: 0.26rem;
+    font-size:small;
 }
 
 .ad-3 {
