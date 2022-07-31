@@ -19,41 +19,8 @@
     <title>woods-marshes</title>
 </head>
 <body class="woods-marshes">
-    <div id="dialog-form" data-woods-marshes="dialog-form" title="填写行程信息">
-        <p class="validateTips">不会收集您的任何信息</p>
-        <form data-woods-marshes="form">
-            <fieldset>
-                <div class="from-group">
-                    <label for="phonecode">手机号码</label>
-                    <input type="text" name="phonecode" id="phonecode" autofocus required pattern="[0-9]+" class="text ui-widget-content ui-corner-all">
-                </div>
-                <div class="from-group">
-                    <label for="area">七日内到过的中高风险地区</label>
-                    <input type="text" name="area" id="area" value="" placeholder="例如：神奈川县" required pattern="[^0-9]" class="text ui-widget-content ui-corner-all">
-                </div>
-                <div class="from-group">
-                    <label for="identity">身份</label>
-                    <select name="id" id="identity" class="text ui-widget-content ui-corner-all">
-                        <option value="岁静">~</option> 
-                        <option value="太监">太监</option> 
-                        <option value="集美">集美</option>
-                        <option value="A畜">A畜</option>
-                        <option value="V畜">V畜</option>
-                        <option value="抗带">抗带</option>
-                        <option value="兔友">兔友</option>
-                        <option value="神友">神友</option>
-                        <option value="左棍">←</option>
-                        <option value="晶哥">晶哥</option>
-                        <option value="glasses">蛤</option>
-                        <option value="也要鼓掌">维尼</option>
-                        <option value="he">&nbsp;&nbsp;&nbsp;他&nbsp; </option>
-                    </select>                    
-                </div>
-            </fieldset>
-        </form>
-    </div>
     <header class="woods-header">
-            <h1 class="title-text">woods-marshes</h1>
+        <h1 class="title-text">woods-marshes</h1>
     </header>
     <div class="woods-body">
         <main class="body-content">
@@ -120,7 +87,7 @@
                         <span>
                             bilibili&nbsp;|&nbsp;
                         </span> 
-                -->    
+                    -->    
                     <img src="https://img.shields.io/badge/bilibili-TouLe--Channel-brightgreen?labelColor=FF6699&color=FFFFFF" alt="bilibilli">&nbsp;&nbsp;
                 </a>
                 <a href="https://github.com/woods-marshes/woods-marshes.github.io">
@@ -145,6 +112,39 @@
             <span data-woods-marshes="showtime"><loading class="">loading...</loading></span>
         </div>
     </footer>
+    <div id="dialog-form" data-woods-marshes="dialog-form" title="填写行程信息">
+        <p class="validateTips">不会收集您的任何信息</p>
+        <form data-woods-marshes="form">
+            <fieldset>
+                <div class="from-group">
+                    <label for="phonecode">手机号码</label>
+                    <input type="text" name="phonecode" id="phonecode" autofocus required pattern="[0-9]+" class="text ui-widget-content ui-corner-all">
+                </div>
+                <div class="from-group">
+                    <label for="area">七日内到过的中高风险地区</label>
+                    <input type="text" name="area" id="area" value="" placeholder="例如：神奈川县" required pattern="[^0-9]" class="text ui-widget-content ui-corner-all">
+                </div>
+                <div class="from-group">
+                    <label for="identity">身份</label>
+                    <select name="id" id="identity" class="text ui-widget-content ui-corner-all">
+                        <option value="岁静">~</option> 
+                        <option value="太监">太监</option> 
+                        <option value="集美">集美</option>
+                        <option value="A畜">A畜</option>
+                        <option value="V畜">V畜</option>
+                        <option value="抗带">抗带</option>
+                        <option value="兔友">兔友</option>
+                        <option value="神友">神友</option>
+                        <option value="左棍">←</option>
+                        <option value="晶哥">晶哥</option>
+                        <option value="glasses">蛤</option>
+                        <option value="也要鼓掌">维尼</option>
+                        <option value="he">&nbsp;&nbsp;&nbsp;他&nbsp; </option>
+                    </select>                    
+                </div>
+            </fieldset>
+        </form>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="scripts/dialog.js"></script>

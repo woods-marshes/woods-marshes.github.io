@@ -87,8 +87,11 @@ span {
 
 .card-title {
     position: absolute;
-    top: 10px;
-    left: 110px;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    transform: translate(50%, 50%); /* 50%为自身尺寸的一半 */
+    -webkit-transform: translate(80%, 50%);
 }
 
 .card-title-1 {
@@ -167,13 +170,39 @@ span {
     white-space: nowrap;
     margin: 0;
     padding: 0;
-    width: 100%;
     vertical-align: baseline;
     font-size:12px;
+    display: flex;
+}
+
+.ad-2-2-1 {
+    flex: 0 1 auto;
+    width: 100%;
+}
+
+.ad-2-2-2 {
+    flex: 1 0 auto;
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.ad-2-2-3 {
+    flex: 0 1 auto;
+    width: 100%;
+}
+
+.ad-2-3 {
+    margin-top: 4%;
+}
+
+.ad-2-3-1 {
+    width: 20%;
+    height: 20%;
 }
 
 .ad-3 {
-    margin-top: 7%;
+    margin-top: 4%;
     font-size: 13px;
     margin-bottom: 40%;
 }
