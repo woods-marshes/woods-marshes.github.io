@@ -167,8 +167,9 @@ span {
     white-space: nowrap;
     margin: 0;
     padding: 0;
+    width: 100%;
     vertical-align: baseline;
-    font-size:small;
+    font-size:12px;
 }
 
 .ad-3 {
