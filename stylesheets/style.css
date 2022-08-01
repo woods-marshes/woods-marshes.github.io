@@ -61,38 +61,73 @@ a {
 
 .image-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    padding: 20px 20px;
+    padding: 3%;
 }
 
 .image-frame {
     text-align: center;
-    
-    transition: transform 133ms;
+    position: relative;
+    /*transition: transform 133ms;*/
 
 }
 
+/*
 .image-frame:hover {
     transform: scale(1.1);
 }
+*/
 
 .main-image {
-    width: 80%;
+    width: 90%;
     border-radius: 16px;
 }
 
 .loge-text {
+    position: absolute; 
+    bottom: -16px;
+    left: 4px;
+
     color: white;
-    font-size: 40px;
-    text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+    font-size: 30px;
+    text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 12px;
     
 }
 
-.nav-url {
+.nav-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.music {
+    flex:1 1 auto;
+    margin-top: 10%;
+    display: none;
+}
+
+.music-list {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.music-list-item {
+    display: block;
+    max-width: auto;
+    max-width: auto;
+    white-space: nowrap;
+    margin: 4% 0%;
+    text-align: center;
+}
+
+.music-title {
+    color: rgba(5, 3, 34, 0.7);
 }
 
 .ads-list {
@@ -114,7 +149,7 @@ a {
     border-bottom: 1px solid rgb(255, 255, 255); 
     border-bottom: 1px solid rgba(100, 255, 255, 0.8);
     max-width: auto;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .li-title {
@@ -164,6 +199,17 @@ a {
     .body-content {
         flex: 1 0 auto;
     }
+
+    .main-image {
+        max-width: 500px;
+        max-height: 500px;
+        border-radius: 16px;
+    }
+
+    .loge-text {
+        font-size: 45px;
+    }
+
     .body-nav,
     .body-ads {
         /* 12em is the width of the columns */
