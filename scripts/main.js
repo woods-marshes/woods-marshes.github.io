@@ -26,7 +26,7 @@
     songs.addSongsList(MUSIC_SELECTOR, ZP_SELECTOR);
     songs.songs();
 
-    var zhaoP = new ZhaoP(ZHAO_SELECTOR);
-    zhaoP.addZhaoPList(ZP_SELECTOR, MUSIC_SELECTOR,);
+    //var zhaoP = new ZhaoP(ZHAO_SELECTOR);
+    //zhaoP.addZhaoPList(ZP_SELECTOR, MUSIC_SELECTOR,);
     
 })(window);
