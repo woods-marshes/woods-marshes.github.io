@@ -21,7 +21,7 @@
         this.$element.on('click',function () {  
             //console.log(a);
             //$(selector2).fadeOut();
-            $('[data-woods-marshes="one"]').css({'color':'rgba(240, 245, 250, 0.8)', 'text-shadow':'rgba(0, 0 , 0, 0.9) 1px 2px 3px'});
+            $('[data-woods-marshes="one"]').css({'color':'rgba(240, 245, 250, 0.8)', 'text-shadow':'rgba(0, 0 , 0, 0.9) 1px 2px 1px'});
             if (! a) {
                 a = 0;
             }
@@ -52,7 +52,7 @@
             var title = $(this).find('span').text();
             $music.attr('src', url);
             $big_loge_text.html('<em>' + title + '</em>');
-            $(this).find('span').css({'color':'rgba(240, 245, 250, 0.8)', 'text-shadow':'rgba(0, 0 , 0, 0.9) 1px 2px 3px'});
+            $(this).find('span').css({'color':'rgba(240, 245, 250, 0.8)', 'text-shadow':'rgba(0, 0 , 0, 0.9) 1px 2px 1px'});
             $music[0].play();
         });
     }
